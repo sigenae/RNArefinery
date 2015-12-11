@@ -1,3 +1,3 @@
-# RNArefinery
-Bunch of R scripts
+# RNA Refinery
 
+Bunch of scripts to improve the RNA annotation.

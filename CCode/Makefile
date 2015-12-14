@@ -10,16 +10,22 @@ SRCS = makellist.c utils.c
 HDRS = utils.h 
 
 
-all: makellist exfasta
+all: makellist exfasta include_mf
 
-exfasta: exfasta.o
+include_mf: utils.o include_mf.o
 	${CC} ${CFLAGS} $? ${CLIB} ${LDFLAGS} -o $@
-	
+
 makellist: utils.o makellist.o
 	${CC} ${CFLAGS} $? ${CLIB} ${LDFLAGS} -o $@
 
+include_mf.o: include_mf.c
+	${CC} ${CFLAGS} ${CINCLUDES} -c -O2 $?
+
 makellist.o: makellist.c
 	${CC} ${CFLAGS} ${CINCLUDES} -c -O2 $?
+
+exfasta: exfasta.o
+	${CC} ${CFLAGS} $? ${CLIB} ${LDFLAGS} -o $@
 	
 utils.o: utils.c
 	${CC} ${CFLAGS} ${CINCLUDES} -c -O2 $?	

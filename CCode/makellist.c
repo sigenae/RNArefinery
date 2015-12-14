@@ -21,7 +21,8 @@ int main(int argc, char *argv[]) {
   register int j;
 
   if (argc != 2) {
-    printf("Prints sequences lengths.\n usage: makellist <in fasta>\n");
+    printf("%s\n  %s\n\n\n", "Prints multi-FATSA file sequences lengths.",
+        "usage: makellist <in fasta>");
     return 10;
   } else {
     infn = argv[1];

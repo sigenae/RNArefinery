@@ -12,8 +12,9 @@ int main(int argc, char *argv[]) {
   register int j;
 
   if (argc != 3) {
-    printf(
-        "Extracts a single fasta sequence from multifasta file\n usage: exfasta <seq name> <in fasta>\n");
+    printf("%s\n  %s\n\n\n",
+        "Extracts a single FASTA sequence from a multi-FASTA file",
+        "usage: exfasta <seq name> <in fasta>\n");
     return 10;
   } else {
     s = argv[1];

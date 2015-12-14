@@ -9,15 +9,6 @@
 
 char* const skipped_suffix = ".skipped";
 
-// cleans up right side spaces and carriage return
-void chomp(char *str);
-
-// compares strings alphabetically using standard strncmp
-static int cmp_seq_header(const void* _a, const void* _b);
-
-// prints sequence structure into the file
-void print_fasta(FASTASEQ *f, FILE *out);
-
 // ------------------------------------------------------------------------------------------------
 // back to business...
 //
@@ -45,8 +36,9 @@ int main(int argc, char *argv[]) {
   // check for proper args, i know it may be fancier but whatever :)
   if (argc != 4) {
     //print help
-    printf("%s\n%s", "usage: include_mf <in fasta> <out fasta> <include list>",
-        "    produces also <include list>.skipped just for your convenience... ");
+    printf("%s\n  %s\n  %s\n\n\n", "Filters the FASTA file according to the list",
+        "usage: include_mf <in fasta> <out fasta> <include list>",
+        "produces also <include list>.skipped just for your convenience");
     return 10;
   } else {
     //got the arguments, no validation...
@@ -217,47 +209,4 @@ int main(int argc, char *argv[]) {
 
   return 0;
 
-}
-
-// just clean up the 'right' side of string from new line etc...
-//
-void chomp(char *str) {
-  int l = strlen(str) - 1;
-  while ((str[l] == '\n') || (str[l] == ' ') || (str[l] == '\r')) {
-    str[l] = '\0';
-    l--;
-  }
-}
-// prints the FASTA sequence into the file
-//
-void print_fasta(FASTASEQ *f, FILE *out) {
-
-  // line buffer
-  char tmp[60];
-
-  // print the name
-  fprintf(out, ">%s\n", f->real_name);
-
-  // while sequence 'reminder' greater than 50 symbols print chunks to the file
-  register int c = 0;
-  while (c + 50 < f->len) {
-    strncpy(tmp, (char *) (f->fasta) + c, 50);
-    tmp[50] = '\0';
-    fprintf(out, "%s\n", tmp);
-    c = c + 50;
-  }
-
-  // if there is a leftover, print it too
-  if (c < f->len) {
-    strncpy(tmp, (char *) (f->fasta) + c, f->len - c);
-    tmp[f->len - c] = '\0';
-    fprintf(out, "%s\n", tmp);
-  }
-}
-
-static int cmp_seq_header(const void* _a, const void* _b) {
-  const char* a = (const char*) (((const SEQHEADER*) _a)->name);
-  const char* b = (const char*) (((const SEQHEADER*) _b)->name);
-  //printf(" --DEBUG-- comparing %s and %s\n", a, b);
-  return strcmp(a, b);
 }

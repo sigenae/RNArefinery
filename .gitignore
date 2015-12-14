@@ -41,3 +41,9 @@
 # eclipse files
 .metadata
 RemoteSystemsTempFiles
+
+# executables
+exfasta
+include_mf
+makellist
+

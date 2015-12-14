@@ -1,7 +1,13 @@
+# retrieves data from SRA archive configured by the SRADb SQL query
+#
 # requires SRAdb package installed 
 # and the database downloaded
 #
-# get the libraries
+# Caveats:
+#   1) Aspera fails sometimes, rolls back to FTP protocol download
+#
+
+## get the libraries
 #
 require(SRAdb)
 require(RSQLite)

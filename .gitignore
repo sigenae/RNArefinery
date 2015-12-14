@@ -34,3 +34,10 @@
 # Debug files
 *.dSYM/
 
+# Eclipse project data
+.project
+.cproject
+
+# eclipse files
+.metadata
+RemoteSystemsTempFiles

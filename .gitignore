@@ -48,3 +48,4 @@ include_mf
 makellist
 
 .Rproj.user
+RScripts/RScripts.Rproj

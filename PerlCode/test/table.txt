@@ -1,0 +1,50 @@
+ERR348561_CL10223Contig1_1	ref|XM_010727226.1|	PREDICTED: Meleagris gallopavo mucin-6-like (LOC104916219), mRNA	100	58.0	1597	29	0	6e-04
+ERR348561_CL1031Contig1_1	emb|AL772268.6|	Mouse DNA sequence from clone RP23-465I4 on chromosome 11, complete sequence	88.3333333333333	63.9	1319	60	0	8e-06
+ERR348561_CL11199Contig1_1	ref|XM_009467784.1|	PREDICTED: Nipponia nippon ring finger protein 40, E3 ubiquitin protein ligase (RNF40), mRNA	91.304347826087	1338	1500	1035	0	0.0
+ERR348561_CL11371Contig1_1	ref|XM_004949698.1|	PREDICTED: Gallus gallus zinc finger protein 608 (ZNF608), transcript variant X10, mRNA	100	670	675	338	0	0.0
+ERR348561_CL11378Contig1_1	ref|XM_008027798.1|	Setosphaeria turcica Et28A glycosyltransferase family 2 protein mRNA	96.7741935483871	54.0	362	31	0	0.002
+ERR348561_CL11444Contig1_1	emb|CR353532.1|	Gallus gallus finished cDNA, clone ChEST131a21	99.8031496062992	999	761	508	0	0.0
+ERR348561_CL11797Contig1_1	ref|XM_004935994.1|	PREDICTED: Gallus gallus FAT tumor suppressor homolog 1 (Drosophila) (FAT1), transcript variant X11, mRNA	100	1386	1099	699	0	0.0
+ERR348561_CL11966Contig1_1	emb|LK064756.1|	Apteryx australis mantelli genome assembly AptMant0, scaffold scaffold185	91.2280701754386	73.8	506	57	0	3e-09
+ERR348561_CL12861Contig1_1	ref|NM_204875.1|	Gallus gallus protein tyrosine phosphatase, non-receptor type 1 (PTPN1), mRNAgb|U86410.1|GGU86410 Gallus gallus non-receptor protein tyrosine phosphatase (PTP1B) mRNA, complete cds	100	938	926	473	0	0.0
+ERR348561_CL12870Contig1_1	emb|AJ851701.1|	Gallus gallus mRNA for hypothetical protein, clone 19e2	100	309	650	156	0	4e-80
+ERR348561_CL12955Contig1_1	ref|XM_419437.4|	PREDICTED: Gallus gallus solute carrier family 30 (zinc transporter), member 1 (SLC30A1), partial mRNA	100	1318	989	665	0	0.0
+ERR348561_CL1299Contig1_1	emb|BX663534.4|	Chicken DNA sequence from clone WAG-58B13, complete sequence	96.3592233009709	690	1929	412	1	0.0
+ERR348561_CL13118Contig1_1	ref|XR_212346.1|	PREDICTED: Gallus gallus nesprin-1-like (LOC415641), misc_RNA	99.6363636363636	537	423	275	0	1e-149
+ERR348561_CL131Contig1_1	ref|NM_001195002.1|	Gallus gallus WD repeat domain 70 (WDR70), transcript variant 1, mRNA	99.9315068493151	2886	2388	1460	0	0.0
+ERR348561_CL13495Contig1_1	ref|XM_014277762.1|	PREDICTED: Falco cherrug zinc finger protein 271-like (LOC102050616), mRNA	92.9824561403509	81.8	895	57	0	2e-11
+ERR348561_CL13521Contig1_1	ref|NM_001031432.2|	Gallus gallus glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase (GNE), mRNA	100	535	476	270	0	1e-148
+ERR348561_CL1390Contig1_1	ref|XM_004949203.1|	PREDICTED: Gallus gallus heterogeneous nuclear ribonucleoprotein K-like (HNRNPK), transcript variant X5, mRNA	100	603	551	304	0	1e-168
+ERR348561_CL14219Contig1_1	dbj|AB195693.1|	Gallus gallus CAF-1p60 mRNA for chromatin assembly factor-1p60, complete cds	99.6175908221797	1021	913	523	0	0.0
+ERR348561_CL14280Contig1_1	ref|XM_424827.4|	PREDICTED: Gallus gallus frataxin (FXN), mRNA	97.2515856236787	860	696	473	0	0.0
+ERR348561_CL14Contig2_1	ref|XM_004939390.1|	PREDICTED: Gallus gallus UDP-N-acetyl-alpha-D-galactosamine:polypeptide N-acetylgalactosaminyltransferase-like 2 (GALNTL2), transcript variant X5, mRNA	94.6745562130178	256	440	169	1	3e-64
+ERR348561_CL15176Contig1_1	gb|AF532364.1|	Tragopan satyra aggrecan (AG3) gene, intron 3gb|AF532365.1| Tragopan satyra aggrecan (AG3) gene, intron 3	87.1212121212121	121	571	132	2	2e-23
+ERR348561_CL15389Contig1_1	ref|XM_004479863.1|	PREDICTED: Dasypus novemcinctus phospholipase C, beta 3 (phosphatidylinositol-specific) (PLCB3), transcript variant X3, mRNA	91.8367346938776	65.9	819	49	0	1e-06
+ERR348561_CL15512Contig1_1	ref|XM_010720580.1|	PREDICTED: Meleagris gallopavo kinase suppressor of Ras 2-like (LOC104909287), mRNA	96.2962962962963	410	464	243	0	1e-110
+ERR348561_CL15632Contig1_2	emb|CR524448.1|	Gallus gallus finished cDNA, clone ChEST788h7	99.8198198198198	1092	1606	555	0	0.0
+ERR348561_CL15903Contig1_1	ref|XM_003643494.2|	PREDICTED: Gallus gallus ATP-sensitive inward rectifier potassium channel 10-like (LOC100857799), mRNA	99.7542997542998	799	988	407	0	0.0
+ERR348561_CL15Contig1_1	emb|CR386895.1|	Gallus gallus finished cDNA, clone ChEST36d4	100	234	2072	118	0	6e-57
+ERR348561_CL1608Contig1_1	ref|NM_001031083.1|	Gallus gallus synaptotagmin binding, cytoplasmic RNA interacting protein (SYNCRIP), mRNA	100	601	668	303	0	1e-168
+ERR348561_CL1618Contig1_1	ref|XM_004950040.1|	PREDICTED: Gallus gallus integrin, alpha 7 (ITGA7), partial mRNA	99.4219653179191	335	1707	173	0	2e-87
+ERR348561_CL1627Contig1_1	gb|AF124925.1|AF124925	Gallus gallus clone pG8414 subtelomeric repeat sequence	84.070796460177	81.8	997	113	0	3e-11
+ERR348561_CL1634Contig1_1	ref|XM_004938086.1|	PREDICTED: Gallus gallus tubby like protein 3 (TULP3), transcript variant X4, mRNA	100	1729	1229	872	0	0.0
+ERR348561_CL1654Contig1_1	ref|XM_006270850.2|	PREDICTED: Alligator mississippiensis cytoplasmic polyadenylation element binding protein 4 (CPEB4), mRNA	100	365	513	184	0	6e-97
+ERR348561_CL165Contig1_1	ref|XM_420892.4|	PREDICTED: Gallus gallus exocyst complex component 6B (EXOC6B), transcript variant X8, mRNA	98.9164086687307	1239	2201	646	0	0.0
+ERR348561_CL1679Contig1_1	gb|KT626858.1|	Gallus gallus isolate 1670 mitochondrion, partial genome	100	1616	1197	815	0	0.0
+ERR348561_CL1726Contig1_1	emb|CR390387.1|	Gallus gallus finished cDNA, clone ChEST420h23	96.7213114754098	644	803	366	0	0.0
+ERR348561_CL1731Contig1_1	ref|NM_205517.1|	Gallus gallus blue sensitive cone opsin (OPN2SW), mRNAgb|M92037.1|CHKBSCOA Gallus gallus blue sensitive cone opsin mRNA, complete cds	99.0196078431373	389	472	204	0	1e-104
+ERR348561_CL1767Contig1_1	ref|XM_013099693.1|	PREDICTED: Anas platyrhynchos toll interacting protein (TOLLIP), transcript variant X5, mRNA	93.3333333333333	357	397	255	3	1e-94
+ERR348561_CL1899Contig1_1	ref|XM_010727476.1|	PREDICTED: Meleagris gallopavo adenylate cyclase activating polypeptide 1 (pituitary) (ADCYAP1), mRNA	100	250	358	126	0	2e-62
+ERR348561_CL18Contig4_1	ref|XM_414940.4|	PREDICTED: Gallus gallus 4-aminobutyrate aminotransferase (ABAT), transcript variant X6, mRNA	99.8442367601246	1265	984	642	0	0.0
+ERR348561_CL1943Contig1_1	gb|AC214807.3|	Gallus gallus BAC clone CH261-99G18 from chromosome z, complete sequence	90.3508771929825	414	881	342	4	1e-111
+ERR348561_CL2146Contig1_1	ref|XM_010407986.1|	PREDICTED: Corvus cornix cornix DNA-directed RNA polymerase II subunit RPB1-like (LOC104694612), partial mRNA	85.8695652173913	63.9	727	91	2	4e-06
+ERR348561_CL2254Contig1_1	gb|AC187570.3|	Gallus gallus BAC clone CH261-189F16 from chromosome z, complete sequence	94.468085106383	720	672	470	2	0.0
+ERR348561_CL2274Contig1_1	emb|LK108099.1|	Apteryx australis mantelli genome assembly AptMant0, scaffold scaffold43529	84.8101265822785	56.0	938	77	2	0.001
+ERR348561_CL233Contig2_1	ref|XM_004690018.2|	PREDICTED: Condylura cristata solute carrier family 35 (UDP-galactose transporter), member A2 (SLC35A2), transcript variant X1, mRNA	100	60.0	761	30	0	7e-05
+ERR348561_CL255Contig2_1	emb|CR386545.1|	Gallus gallus finished cDNA, clone ChEST900b8	98.2102908277405	837	1858	447	0	0.0
+ERR348561_CL2569Contig1_1	ref|XM_419601.3|	PREDICTED: Gallus gallus sulfotransferase family, cytosolic, 6B, member 1-like (LOC421560), transcript variant X2, mRNA	100	896	726	452	0	0.0
+ERR348561_CL2587Contig1_1	gb|AC174867.3|	Gallus gallus BAC clone CH261-81D3 from chromosome w, complete sequence	82.3651452282158	264	651	480	4	2e-66
+ERR348561_CL272Contig2_1	ref|XM_010728112.1|	PREDICTED: Meleagris gallopavo maestro heat-like repeat-containing protein family member 1 (LOC100550063), partial mRNA	87.3563218390805	85.7	340	87	0	5e-13
+ERR348561_CL2732Contig1_1	ref|XM_013297439.1|	PREDICTED: Falco peregrinus MAF1 homolog, negative regulator of RNA polymerase III (MAF1), mRNA	93.3962264150943	147	486	106	1	2e-31
+ERR348561_CL2845Contig1_1	ref|XM_010582899.1|	PREDICTED: Haliaeetus leucocephalus RAB2A, member RAS oncogene family (RAB2A), transcript variant X4, mRNA	93.2126696832579	325	319	213	8	3e-85
+ERR348561_CL2857Contig1_1	emb|AJ851519.1|	Gallus gallus mRNA for hypothetical protein, clone 4g15	91.2202380952381	975	1113	672	0	0.0

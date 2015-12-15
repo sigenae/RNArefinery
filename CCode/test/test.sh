@@ -1,0 +1,1 @@
+../makellist test.fa

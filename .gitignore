@@ -1,5 +1,8 @@
 # Created by https://www.gitignore.io/api/c
 
+### The sandbox data
+sandbox
+
 ### C ###
 # Object files
 *.o
@@ -47,5 +50,7 @@ exfasta
 include_mf
 makellist
 
+# R-project related
 .Rproj.user
 RScripts/RScripts.Rproj
+RScripts/.Rhistory

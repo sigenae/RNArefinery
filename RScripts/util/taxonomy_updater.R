@@ -47,8 +47,10 @@ organisms <- alply(unique(hits$hit_name), 1, function(x){
   if (!any(is.na(t))) {
     res <- try(organism_for_id(t), silent = TRUE)
     if (inherits(res,'try-error')) {
+      print(paste(x,NA))
       return(c(x, NA))
     } else {
+      print(paste(x,res))
       return(c(x,res))
     }
   }

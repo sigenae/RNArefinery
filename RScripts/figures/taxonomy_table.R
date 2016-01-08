@@ -71,3 +71,6 @@ common_org_table <- ldply(common_org_taxonomy, function(x){
   })
 
 head(common_org_table)
+
+write.table(common_org_table[,-1], "../sandbox/taxonomy_table.tsv", sep = "\t", col.names = T, 
+            row.names = F, quote = T)

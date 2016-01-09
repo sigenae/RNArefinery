@@ -55,7 +55,7 @@ cat ${SEARCHPATH}/filters/blat_raw_cds.psl | ${refinery_blatparser} > ${SEARCHPA
 # 0.5. re-filter by the CDS template
 #
 echo "  filtering raw contigs using BLAT CDS alignment..." >&2
-Rscript ${refinery_bin}/filter_75_square.R ${SEARCHPATH}/filters/raw_contigs.llist ${SEARCHPATH}/filters/blat_raw_cds.best.tsv ${SEARCHPATH}/filters/filter0_cds_keepers.list
+Rscript ${refinery_bin}/filter_square75.R ${SEARCHPATH}/filters/raw_contigs.llist ${SEARCHPATH}/filters/blat_raw_cds.best.tsv ${SEARCHPATH}/filters/filter0_cds_keepers.list
 include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cds.fa ${SEARCHPATH}/filters/filter0_cds_keepers.list
 makellist ${SEARCHPATH}/filters/contigs_after_cds.fa >${SEARCHPATH}/filters/contigs_after_cds.llist
 #
@@ -68,7 +68,7 @@ cat ${SEARCHPATH}/filters/blat_cds_cdna.psl | ${refinery_blatparser} > ${SEARCHP
 # 0.5. re-filter by the CDNA template
 #
 echo "  filtering contigs using BLAT CDNA alignment..." >&2
-Rscript ${refinery_bin}/filter_75_square.R ${SEARCHPATH}/filters/contigs_after_cds.llist ${SEARCHPATH}/filters/blat_cds_cdna.best.tsv ${SEARCHPATH}/filters/filter1_cdna_keepers.list
+Rscript ${refinery_bin}/filter_square75.R ${SEARCHPATH}/filters/contigs_after_cds.llist ${SEARCHPATH}/filters/blat_cds_cdna.best.tsv ${SEARCHPATH}/filters/filter1_cdna_keepers.list
 include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cdna.fa ${SEARCHPATH}/filters/filter1_cdna_keepers.list
 makellist ${SEARCHPATH}/filters/contigs_after_cdna.fa >${SEARCHPATH}/filters/contigs_after_cdna.llist
 #
@@ -84,6 +84,6 @@ cat ${SEARCHPATH}/filters/blat_cdna_refseq_pep.psl | ${refinery_blatparser} -f t
 # 0.7. re-filter by the REFSEQ PEP data
 #
 echo "  filtering contigs using BLAT REFSEQ PEP alignment..." >&2
-Rscript ${refinery_bin}/filter_75_square_inverse.R ${SEARCHPATH}/filters/contigs_after_cdna.llist ${SEARCHPATH}/filters/blat_cdna_refseq_pep.best.tsv ${SEARCHPATH}/filters/filter2_refseq_pep_keepers.list
+Rscript ${refinery_bin}/ffilter_square75_iverse.R ${SEARCHPATH}/filters/contigs_after_cdna.llist ${SEARCHPATH}/filters/blat_cdna_refseq_pep.best.tsv ${SEARCHPATH}/filters/filter2_refseq_pep_keepers.list
 include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_refseq_pep.fa ${SEARCHPATH}/filters/filter2_refseq_pep_keepers.list
 makellist ${SEARCHPATH}/filters/contigs_after_refseq_pep.fa >${SEARCHPATH}/filters/contigs_after_refseq_pep.llist

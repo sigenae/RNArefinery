@@ -57,9 +57,9 @@ makellist ${SEARCHPATH}/filters/raw_contigs.fa >${SEARCHPATH}/filters/raw_contig
 #
 # 0.6. run blat using the PEP5 data
 #
-#echo "  running BLAT on NEW PEPTIDE SET..." >&2
-#blat -t=dnax ${SEARCHPATH}/filters/contigs_after_cdna5.fa -q=prot ${reference5_protein} ${SEARCHPATH}/filters/blat_cdna5_pep5.psl
-#cat ${SEARCHPATH}/filters/blat_cdna5_pep5.psl | ${refinery_blatparser} -f t > ${SEARCHPATH}/filters/blat_cdna5_pep5.best.tsv
+echo "  running BLAT on NEW PEPTIDE SET..." >&2
+blat -t=dnax ${SEARCHPATH}/filters/contigs_after_cdna5.fa -q=prot ${reference5_protein} ${SEARCHPATH}/filters/blat_cdna5_pep5.psl
+cat ${SEARCHPATH}/filters/blat_cdna5_pep5.psl | ${refinery_blatparser} -f t > ${SEARCHPATH}/filters/blat_cdna5_pep5.best.tsv
 #
 # 0.7. re-filter by the REFSEQ PEP data
 #

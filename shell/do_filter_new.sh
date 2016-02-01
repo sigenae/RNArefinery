@@ -44,16 +44,16 @@ makellist ${SEARCHPATH}/filters/raw_contigs.fa >${SEARCHPATH}/filters/raw_contig
 #
 # 0.4. run blat using the MRNA5 data
 #
-#echo "  running BLAT on the NEW CDNA/MRNA? SET..." >&2
-#blat ${reference5_mrna} ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/blat_cdna5.psl
-#cat ${SEARCHPATH}/filters/blat_cdna5.psl | ${refinery_blatparser} > ${SEARCHPATH}/filters/blat_cdna5.best.tsv
+echo "  running BLAT on the NEW CDNA/MRNA? SET..." >&2
+blat ${reference5_mrna} ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/blat_cdna5.psl
+cat ${SEARCHPATH}/filters/blat_cdna5.psl | ${refinery_blatparser} > ${SEARCHPATH}/filters/blat_cdna5.best.tsv
 #
 # 0.5 filter those with less than 20% overlap on MRNA template
 #
-#echo "  filtering raw contigs using NEW MRNA SET alignment..." >&2
-#Rscript ${refinery_bin}/filter_square75.R ${SEARCHPATH}/filters/raw_contigs.llist ${SEARCHPATH}/filters/blat_cdna5.best.tsv ${SEARCHPATH}/filters/blat_cdna5.keepers.list
-#include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cdna5.fa ${SEARCHPATH}/filters/blat_cdna5.keepers.list
-#makellist ${SEARCHPATH}/filters/contigs_after_cdna5.fa >${SEARCHPATH}/filters/contigs_after_cdna5.llist
+echo "  filtering raw contigs using NEW MRNA SET alignment..." >&2
+Rscript ${refinery_bin}/filter_square75.R ${SEARCHPATH}/filters/raw_contigs.llist ${SEARCHPATH}/filters/blat_cdna5.best.tsv ${SEARCHPATH}/filters/blat_cdna5.keepers.list
+include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cdna5.fa ${SEARCHPATH}/filters/blat_cdna5.keepers.list
+makellist ${SEARCHPATH}/filters/contigs_after_cdna5.fa >${SEARCHPATH}/filters/contigs_after_cdna5.llist
 #
 # 0.6. run blat using the PEP5 data
 #

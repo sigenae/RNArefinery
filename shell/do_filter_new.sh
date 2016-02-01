@@ -63,7 +63,19 @@ cat ${SEARCHPATH}/filters/blat_cdna5_pep5.psl | ${refinery_blatparser} -f t > ${
 #
 # 0.7. re-filter by the REFSEQ PEP data
 #
-echo "  filtering contigs using BLAT REFSEQ PEP alignment..." >&2
+echo "  filtering contigs using NEW PEPTIDE SET alignment..." >&2
 Rscript ${refinery_bin}/filter_square75_iverse.R ${SEARCHPATH}/filters/contigs_after_cdna5.llist ${SEARCHPATH}/filters/blat_cdna5_pep5.best.tsv ${SEARCHPATH}/filters/blat_cdna5_pep5_keepers.list
 include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cdna5_pep5.fa ${SEARCHPATH}/filters/blat_cdna5_pep5_keepers.list
 makellist ${SEARCHPATH}/filters/contigs_after_cdna5_pep5.fa >${SEARCHPATH}/filters/contigs_after_cdna5_pep5.llist
+#
+# 0.8 filter those with less than 20% overlap on GENOME
+#
+echo "  running BLAT on GENOME DNA..." >&2
+blat ${reference5_genome} ${SEARCHPATH}/filters/contigs_after_cdna5_pep5.fa ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.psl
+cat ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.psl | ${refinery_blatparser} > ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.best.tsv
+#
+echo "  filtering contigs using BLAT GENOME alignment..." >&2
+Rscript ${refinery_bin}/filter20_blat.R ${SEARCHPATH}/filters/contigs_after_cdna5_pep5.llist ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.best.tsv ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5_keepers.list
+include_mf ${SEARCHPATH}/filters/raw_contigs.fa ${SEARCHPATH}/filters/contigs_after_cdna5_pep5_genome5.fa ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5_keepers.list
+makellist ${SEARCHPATH}/filters/contigs_after_cdna5_pep5_genome5.fa >${SEARCHPATH}/filters/contigs_after_cdna5_pep5_genome5.llist
+tail -n+6 ${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.psl | psl2bed >${SEARCHPATH}/filters/blat_cdna5_pep5_genome5.bed

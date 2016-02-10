@@ -522,7 +522,7 @@ dirs5$genome5_llist <-
 llist_count=rep(0,length(dirs5$accession))
 for (i in 1:length(dirs5$accession)) {
   acc = dirs5$accession[i]
-  incontigs_llist = read_llist(dirs5[dirs5$accession == acc,]$pep5_llist)
+  incontigs_llist = read_llist(dirs5[dirs5$accession == acc,]$genome5_llist)
   llist_count[i] = length(incontigs_llist$contig_name)
 }
 dirs5$contigs_after_genome <- llist_count

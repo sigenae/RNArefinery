@@ -5,11 +5,6 @@ LDFLAGS=
 
 OTHERS=
 
-OBJS = makellist.o utils.o
-SRCS = makellist.c utils.c
-HDRS = utils.h 
-
-
 all: makellist exfasta include_mf
 
 include_mf: utils.o include_mf.o
@@ -33,9 +28,10 @@ utils.o: utils.c
 clean:
 	rm *.o
 	rm makellist
-	rm target/makellist
+	rm exfasta
+	rm include_mf
 
 install:
-	cp makellist target/
+	
 
 # DO NOT DELETE

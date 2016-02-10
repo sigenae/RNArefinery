@@ -1,6 +1,6 @@
 #define _ISOC99_SOURCE 
-#include <features.h>
 #include <stdio.h>
+#include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
